@@ -48,7 +48,7 @@ def test_divide_cases(a, b, expected):
 @pytest.mark.external
 @pytest.mark.slow
 def test_weather_api():
-    resp = requests.get("https://api.github.")
+    resp = requests.get("https://api.github.com")
     assert resp.status_code == 200
 
 @pytest.mark.skip(reason="WIP")
